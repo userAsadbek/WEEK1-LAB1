@@ -1,0 +1,67 @@
+// import java.lang; this include all of files
+
+import java.util.Scanner;  //include <library>
+
+
+public class Main{
+     public static void main( ){
+//         System.out.print("Hi, Mike Ross \n"); // default cout
+//
+//         System.out.println(5+4);  // new line or \n ==  println
+//
+         Scanner input=new Scanner(System.in);  // gettin cin from keybaord
+
+         String name= input.nextLine();// declare variable  | works as  getline
+
+//         int year=input.nextInt();
+//         int cour=input.nextInt();
+//         input.nextLine();
+//         String fav=input.nextLine();
+//         String dream=input.nextLine();
+//         System.out.println("Student:  "+name); // string a+=b;
+//         System.out.println("YEAR OF STUDY "+year);
+//         System.out.println("Total num of course "+cour);
+//         System.out.println("FAVORITE COURSE "+fav);
+//         System.out.println("Dream job "+dream);
+
+//         System.out.println("Enter mood ");
+//         String mood=input.nextLine();
+//         System.out.println("Hi "+name);
+//         System.out.println("Have a productive day!");
+         System.out.println("Enter radius ");
+         double radius=input.nextDouble();
+         double a=radius*radius*Math.PI;
+         System.out.println("Enter length");
+         double l=input.nextDouble();
+         System.out.printf("The area is %.2f, Volume %.2f\n",a,l*a);
+
+
+//
+//         System.out.println("Sergeli 5 ");
+//         System.out.println("85 house , street Xabibiy");
+//         System.out.println("Tashkent ");
+//         System.out.println("100051 ");
+//         System.out.println("UZBEKISTAN");
+//
+//         System.out.println("Sergeli 5\n 85 house, street Xabibiy\nTASHKENT\n100051\nUZBEKISTAN\n");
+//
+//     int age=input.nextInt();
+         //input.nextLine();
+//     System.out.println(name+" , you are "+age);
+//     String agenum=input.nextLine();
+//     int ag=Integer.parseInt(agenum);
+//     System.out.println(name+" are "+ag);
+     double area=4.5*7.9;
+     double per = 2*(4.5+7.9);
+
+   System.out.printf("AREA %.2f, perimeter %.2f ",area,per);
+
+
+  input.close();
+
+        // System.out.printf("Hello, worlds "); // do not recommended
+
+
+
+     }
+}
