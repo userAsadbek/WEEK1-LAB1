@@ -1,0 +1,142 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main( ){
+        Scanner input=new Scanner(System.in);
+
+           //prinring an integer %d use
+//        //%d is used for whole numbers(int)
+//        System.out.printf("Age: %d%n",20);
+//
+//        //priting a folating number using %f
+//        //By default, %f printgs 6 digits after the decimal
+//        System.out.printf("Price %f%n",12.5);
+//
+//        //limiting decimal places using %2.f
+//        //.2 means show only 2 digits after the decimal
+//        System.out.printf("TWO NUMBERS %f%n",12.65);
+//        //Printing a string using %s
+//        //%s is used for text (String)
+//        System.out.printf(" NAME : %s%n"," Tristan");
+//        //%c for char
+//        System.out.printf(" Grade: %c%n",'A');
+//        //%b for bool
+//        System.out.printf("TRUE is : %b%n",true);
+//        //%n for new line
+//
+//        System.out.printf("Student: %s, Age: %d, GPA: %.1f%n","Ali",21,3.7);
+//
+//        //Width formatting(rigth-aligned) == setw();
+//        // %10d means reserve 10 spaces, number aligned
+//
+//        System.out.printf("Right aligned number: %10d%n",123);
+//
+//        //left aligned %-10d means reserve 10 spaces
+//        System.out.printf("Left aligned number : %-10d%n",123);
+//
+//
+//        //%.2f two decimal numbers
+//        System.out.printf("NUMbers %.2f%n",123.5344);
+//
+//        // %2$ indicates that value of second argument is used
+//        System.out.printf("%3$c %2$c, %1$c %n",'a','b','c');
+//
+//        //comma formats specificies  adds thousands
+//        System.out.printf("%,d%n",1234567);
+//
+//
+//        System.out.printf("| %10d | %-8d | %d ",100,200,3);
+
+       //problem given
+        System.out.println("Task below ");
+        System.out.println("-----------------------------");
+        System.out.printf(" Java's Primitive Types%n ");
+        System.out.println("-----------------------------");
+        System.out.printf(" %s  %s %-5s%n" ,"CATEGORY |", "NAME | ", "BITTS | " );
+        System.out.println("-----------------------------");
+        System.out.printf("| %s    |%s  |  %04d%n"  , "Floating"  ," double" , 64 );
+        System.out.printf("| %s    |%s  |  %04d%n" , "Floating" ," float ",  32);
+        System.out.printf("| %s    |%s  |  %04d%n"  , "Integer"  ," long" , 64 );
+        System.out.printf("| %s    |%s  |  %04d%n"  , "Integer"  ," int" , 32 );
+        System.out.printf("| %s    |%s  |  %04d%n"  , "Integer"  ," char" , 16 );
+        System.out.printf("| %s    |%s  |  %04d%n"  , "Integer"  ," short" , 16 );
+        System.out.printf("| %s    |%s  |  %04d%n"  , "Integer"  ," byte" , 8);
+       System.out.printf("|  %s    |%s  |  %04d%n", "Boolean", "byte",1);
+
+       //problem 5
+        System.out.println("Enter side  of triangle ");
+        double side=input.nextDouble();
+        System.out.println("Enter length of triangle ");
+        double l=input.nextDouble();
+        side=Math.sqrt(3)/4*Math.pow(side,2);
+        double area=side*l;
+        System.out.printf("Area is %.2f Volume is %.2f",side,area);
+
+          //problem  6
+        System.out.println(" enter cost and taxe rate ");
+        double cost=input.nextDouble();
+        double tax=input.nextDouble();
+         tax=(cost*tax)/100;
+        double tip=cost*18/100;
+        double total=tax+tip+cost;
+        System.out.printf(" TIP is  %.2f Tax is %.2f total is %.2f", tip,tax,total);
+
+        //problem7
+        System.out.println("Enter distance ");
+       double distance=input.nextDouble();
+        System.out.println("Enter km per gallon ");
+        double l=input.nextDouble();
+        System.out.println(" Enter price per gallon ");
+        double per=input.nextDouble();
+        System.out.printf("The cost of driving in sum %.2f",distance/l*per);
+
+
+        problem 8
+        int num=3141;
+        int result=0;
+        while(num>0){
+            int digit=num%10;
+            result+=digit;
+            num/=10;}
+        System.out.printf(" RESULT IS %d",result);
+
+         //problem 9
+        System.out.println(" Enter two integers ");
+       int n1=input.nextInt();
+       int n2=input.nextInt();
+       int n3=input.nextInt();
+       int max=0,min=0;
+       int mid;
+       if(n1>n3 && n1>n2){
+           max=n1;}
+       else if (n2>n1 && n2>n3){
+           max=n2; }
+       else
+           max=n3;
+       if(n1<n3 && n1<n2){
+           min=n1;}
+       else if (n2<n3 && n2<n1){
+           min=n2; }
+       else
+           min=n3;
+       mid=(n1+n2+n3)-min-max;
+        System.out.printf(" MAX %d Min %d Middle %d",max,min,mid);
+
+
+
+
+
+       String b="Good Morning";
+        System.out.printf("%d%n",42);
+        System.out.printf("%.5f%n",9.5);
+        System.out.printf("%s%n",b);
+        String Name=input.nextLine();
+        int age=input.nextInt();
+        int year=input.nextInt();
+        input.nextLine();
+        String dream=input.nextLine();
+        System.out.printf("Name: %s, Age %d, Year of Study : %d, Dream Job %s%n",
+                "Tristan",18,1," BE  BEST WHERE HE IS ");
+
+        input.close();
+}}
